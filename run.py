@@ -24,14 +24,18 @@ SHEET = GSPREAD_CLIENT.open('Perceive Stress Scale')
 # print(data)
 #----
 
-def input_amswers():
+def input_answers():
     print("How stressed are you?")
     print("Please answer the ten questions from 0 - 4")
     print("0 = never, 1 = almost never, 2 = sometimes, 3 = fairly often, 4 = very often")
 
     print("1. In the last month, how often have you been upset because of something that happened unexpectedly?")
-    #first_answer = input("Answer: ")
-    #print(f"Your answer on the first question is {first_answer}")
+    first_answer = input("Answer: ")
+    print(f"Your answer on the first question is {first_answer}")
+
+    print("2. In the last month, how often have you felt that you were unable to control the important things in your life?")
+    second_answer = input("Answer: ")
+    print(f"Your answer on the first question is {second_answer}")
 
 
-input_amswers()
+input_answers()
