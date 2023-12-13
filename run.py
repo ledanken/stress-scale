@@ -15,9 +15,18 @@ SHEET = GSPREAD_CLIENT.open('Perceive Stress Scale')
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+#----
+# stress = SHEET.worksheet('Perceive Stress Scale')
 
-stress = SHEET.worksheet('Perceive Stress Scale')
+# data = stress.get_all_values()
 
-data = stress.get_all_values()
+# print(data)
+#----
 
-print(data)
+def input_amswers():
+    print("In the last month, how often have you been upset because of something that happened unexpectedly?")
+    first_answer = input("Answer: ")
+    print(f"Your answer on the first question is {first_answer}")
+
+
+input_amswers()
