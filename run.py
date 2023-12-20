@@ -37,5 +37,37 @@ def input_answers():
     second_answer = input("Answer: ")
     print(f"Your answer on the first question is {second_answer}")
 
+    print("3. In the last month, how often have you felt nervous and stressed?")
+    third_answer = input("Answer: ")
+    print(f"Your answer on the first question is {third_answer}")
 
+    print("4. In the last month, how often have you felt confident about your ability to handle your personal problems?")
+    fourth_answer = input("Answer: ")
+    print(f"Your answer on the first question is {fourth_answer}")
+
+    print("5. In the last month, how often have you felt that things were going your way?")
+    fifth_answer = input("Answer: ")
+    print(f"Your answer on the first question is {fifth_answer}")
+
+    print("6. In the last month, how often have you found that you could not cope with all the things that you had to do?")
+    sixth_answer = input("Answer: ")
+    print(f"Your answer on the first question is {sixth_answer}")
+
+    print("7. In the last month, how often have you been able to control irritations In your life?")
+    seventh_answer = input("Answer: ")
+    print(f"Your answer on the first question is {seventh_answer}")
+
+    print("8. In the last month, how often have you felt that you were on top of Things?")
+    eight_answer = input("Answer: ")
+    print(f"Your answer on the first question is {eight_answer}")
+
+    print("9. In the last month, how often have you been angered because of things that happened That were outside of your control?")
+    ninth_answer = input("Answer: ")
+    print(f"Your answer on the first question is {ninth_answer}")
+
+    print("10. In the last month, how often have you felt difficulties were piling up so high that You could not overcome them?")
+    tenth_answer = input("Answer: ")
+    print(f"Your answer on the first question is {tenth_answer}")
+
+    
 input_answers()
