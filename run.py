@@ -30,8 +30,6 @@ def theQuestions():
         print(row[3] + "\n")
         print(row[4] + "\n")
 
-       
-
 
 def validate_allAnswers():
     answers = input("Please enter your five answers here: \n")
@@ -50,25 +48,15 @@ def validate_allAnswers():
         print("please proceed...")
         break
 
-    
-    
+    return allAnswers
+
+def update_stress_worksheet(answers_data):
+    print("Writing the answers on the stress worksheet")
+    stress = SHEET.worksheet("Perceive Stress Scale")
+    stress.append_row(answers_data)
+    print("Successful!")
+
+
 theQuestions()
-validate_allAnswers()
-
-
-
-
-
-
-    
-#
-
-    #while True:        
-      
-#print(stress)
-# data = stress.get_all_values()
-# def to_validate_answer():
-#    if answer <= 4 and answer >= 0:
-#       print("Please proceed...")
-#    else:
-#        print("Your answer should be from 0 - 4!")
+answers_data = validate_allAnswers()
+update_stress_worksheet(answers_data)
