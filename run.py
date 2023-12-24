@@ -30,16 +30,30 @@ def theQuestions():
         print(row[3] + "\n")
         print(row[4] + "\n")
 
-        answers = input("Please enter your five answers here: \n")
-        allAnswers = answers.split(",")
-        print(allAnswers)
-        
-#def validate_allAnswers():
-    
-    
+       
 
+
+def validate_allAnswers():
+    answers = input("Please enter your five answers here: \n")
+    allAnswers = list(map(int, answers.split(",")))
+    #[int(answers) for answers in allAnswers]
+    print(allAnswers)
+    try:
+        if len(allAnswers) != 5:
+            raise ValueError(
+                f"Please give the five answers. You gave {len(allAnswers)}"
+            )
+    except ValueError as e:
+        print(f"Invalid Entry: {e}, Please give your answers from 0 to 4 again.\n")
+
+    while True:
+        print("please proceed...")
+        break
+
+    
+    
 theQuestions()
-#validate_allAnswers()
+validate_allAnswers()
 
 
 
@@ -47,10 +61,7 @@ theQuestions()
 
 
     
-#if answer <= 4 and answer >= 0:
-     #   print("Please proceed...")
-    #else:
-     #   print("Your answer should be from 0 - 4!\n")
+#
 
     #while True:        
       
